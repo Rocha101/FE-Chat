@@ -9,7 +9,7 @@
   </head>
   <body>
     <div><h1>Atendimento Online</h1></div>
-    <div>
+    <div class="box-conversa">
       <div>
         <h4 class="fala-atendente">Atendente diz:</h4>
         <div class="box-fala-atendente-1">
@@ -24,7 +24,7 @@
       </div>
       <div>
         <h4 class="fala-usuario">Você diz:</h4>
-        <div class="box-texto-usuario">
+        <div class="box-texto-usuario-1">
           <p  class="texto-usuario">Texto</p>
         </div>
       </div>
@@ -54,6 +54,10 @@
     justify-items: center;
     margin-top: 10vh;
     font-size: large;
+  }
+
+  .box-conversa{
+    padding: 30px;
   }
 
   .box-texto-usuario-1 {
@@ -105,7 +109,7 @@
   }
 
   input {
-    width: 20vw;
+    width: 25vw;
     height: 4vh;
     border-radius: 5px;
     border: 1px solid #e6e6e6;
@@ -141,8 +145,8 @@
     justify-content: space-between;
     align-items: center;
     width: 30vw;
-    padding: 5px;
-    gap: 8px;
+    padding: 1px;
+    gap: 15px;
     margin-top: 6vh;
   }
 
