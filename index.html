@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Chat</title>
+  </head>
+  <body>
+    <div><h1>Atendimento Online</h1></div>
+    <div>
+      <div>
+        <h4 class="atendentediz">Atendente diz:</h4>
+        <div class="box-fala-atendente-1">
+          <p>Olá, como posso ajudar?</p>
+        </div>
+      </div>
+      <div>
+        <h4 class="atendentediz">Atendente diz:</h4>
+        <div class="box-fala-atendente-2">
+          <p>Texto</p>
+        </div>
+      </div>
+      <div>
+        <h4 class="vocediz">Você diz:</h4>
+        <div class="box-fala-voce-1">
+          <p>Texto</p>
+        </div>
+      </div>
+      <div>
+        <h4 class="vocediz">Você diz:</h4>
+        <div class="box-fala-voce-2">
+          <p>Texto</p>
+        </div>
+      </div>
+    </div>
+    <div class="box-envio">
+      <input placeholder="Digite sua mensagem..." />
+      <button>Enviar</button>
+    </div>
+  </body>
+</html>
+
+<style>
+  body {
+    background-color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 500px;
+    justify-items: center;
+    margin-top: 10vh;
+    font-size: large;
+  }
+
+  .box-fala-voce-1 {
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    padding: 5px;
+    width: 30vw;
+  }
+
+  .box-fala-voce-1 > p {
+    text-align: right;
+    margin: 3px;
+  }
+
+  .box-fala-voce-2 {
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    padding: 5px;
+    width: 30vw;
+  }
+
+  .box-fala-voce-2 > p {
+    text-align: right;
+    margin: 3px;
+  }
+
+  .box-fala-atendente-1 {
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    padding: 5px;
+    width: 30vw;
+  }
+
+  .box-fala-atendente-1 > p {
+    text-align: left;
+    margin: 3px;
+  }
+
+  .box-fala-atendente-2 {
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    padding: 5px;
+    width: 30vw;
+  }
+
+  .box-fala-atendente-2 > p {
+    text-align: left;
+    margin: 3px;
+  }
+
+  input {
+    width: 20vw;
+    height: 4vh;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    margin: 0;
+  }
+
+  button {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    background-color: #e6e6e6;
+    margin: 0;
+    color: #318a70;
+    font-weight: bolder;
+  }
+
+  button:hover {
+    background-color: #318a70;
+    color: #e6e6e6;
+  }
+
+  button:active {
+    background-color: #266b56;
+    color: #e6e6e6;
+  }
+
+  .box-envio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 30vw;
+    padding: 5px;
+    gap: 8px;
+    margin-top: 6vh;
+  }
+
+  .vocediz {
+    text-align: right;
+  }
+
+  .atendentediz {
+    text-align: left;
+  }
+
+  @media screen and (max-width: 500px) {
+    .box-fala-atendente-1 {
+      width: 80vw;
+    }
+
+    .box-fala-atendente-2 {
+      width: 80vw;
+    }
+
+    .box-fala-voce-1 {
+      width: 80vw;
+    }
+
+    .box-fala-voce-2 {
+      width: 80vw;
+    }
+
+    .box-envio {
+      width: 80vw;
+    }
+
+    body {
+      width: 80vw;
+    }
+
+    input {
+      width: 60vw;
+    }
+
+    button {
+      width: 20vw;
+    }
+  }
+</style>
