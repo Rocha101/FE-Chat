@@ -25,13 +25,13 @@
       <div>
         <h4 class="fala-usuario">Você diz:</h4>
         <div class="box-texto-usuario-1">
-          <p  class="texto-usuario">Texto</p>
+          <p class="texto-usuario">Texto</p>
         </div>
       </div>
       <div>
         <h4 class="fala-usuario">Você diz:</h4>
         <div class="box-texto-usuario-2">
-          <p  class="texto-usuario">Texto</p>
+          <p class="texto-usuario">Texto</p>
         </div>
       </div>
     </div>
@@ -52,19 +52,40 @@
     margin: 0 auto;
     width: 500px;
     justify-items: center;
-    margin-top: 10vh;
+    margin-top: 3vh;
     font-size: large;
+    font-family: arial;
   }
 
-  .box-conversa{
+  .box-conversa {
     padding: 30px;
   }
 
   .box-texto-usuario-1 {
-    background-color: #e6e6e6;
-    border-radius: 2px;
-    padding: 5px;
-    width: 30vw;
+    width: 25vw;
+    margin: 50px auto;
+    border-radius: 15px;
+    background: #318a70;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .box-texto-usuario-1:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid #318a70;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #318a70;
+    border-bottom: 15px solid transparent;
+    right: -16px;
+    top: 0px;
   }
 
   .box-texto-usuario-1 > p {
@@ -73,10 +94,30 @@
   }
 
   .box-texto-usuario-2 {
-    background-color: #e6e6e6;
-    border-radius: 2px;
-    padding: 5px;
-    width: 30vw;
+    width: 25vw;
+    margin: 50px auto;
+    border-radius: 15px;
+    background: #318a70;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .box-texto-usuario-2:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid #318a70;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #318a70;
+    border-bottom: 15px solid transparent;
+    right: -16px;
+    top: 0px;
   }
 
   .box-texto-usuario-2 > p {
@@ -85,10 +126,30 @@
   }
 
   .box-fala-atendente-1 {
-    background-color: #e6e6e6;
-    border-radius: 2px;
-    padding: 5px;
-    width: 30vw;
+    width: 25vw;
+    margin: 50px auto;
+    border-radius: 15px;
+    background: #318a70;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .box-fala-atendente-1:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #318a70;
+    border-top: 15px solid #318a70;
+    border-bottom: 15px solid transparent;
+    left: -16px;
+    top: 0px;
   }
 
   .box-fala-atendente-1 > p {
@@ -97,10 +158,30 @@
   }
 
   .box-fala-atendente-2 {
-    background-color: #e6e6e6;
-    border-radius: 2px;
-    padding: 5px;
-    width: 30vw;
+    width: 25vw;
+    margin: 50px auto;
+    border-radius: 15px;
+    background: #318a70;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .box-fala-atendente-2:after {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #318a70;
+    border-top: 15px solid #318a70;
+    border-bottom: 15px solid transparent;
+    left: -16px;
+    top: 0px;
   }
 
   .box-fala-atendente-2 > p {
@@ -109,16 +190,17 @@
   }
 
   input {
-    width: 25vw;
+    width: 20vw;
     height: 4vh;
     border-radius: 5px;
     border: 1px solid #e6e6e6;
     padding: 5px;
     margin: 0;
+    font-size: large;
   }
 
   button {
-    width: 10vw;
+    width: 5vw;
     height: 5vh;
     border-radius: 5px;
     border: 1px solid #e6e6e6;
@@ -127,6 +209,7 @@
     margin: 0;
     color: #318a70;
     font-weight: bolder;
+    font-size: large;
   }
 
   button:hover {
@@ -144,10 +227,11 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 30vw;
-    padding: 1px;
+    width: 25vw;
     gap: 15px;
     margin-top: 6vh;
+    text-align: center;
+    font-weight: 500;
   }
 
   .fala-usuario {
