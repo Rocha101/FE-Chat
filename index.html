@@ -1,314 +1,123 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Chat</title>
-  </head>
-  <body>
-    <div><h1>Atendimento Online</h1></div>
-    <div class="box-conversa">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chat</title>
+</head>
+
+<body>
+  <div>
+    <h1>Atendimento Online</h1>
+  </div>
+  <div class="scroll">
+    <div>
       <div>
         <h4 class="fala-atendente">Atendente diz:</h4>
-        <div class="box-fala-atendente-1">
+        <div class="box-fala-atendente">
           <p class="texto-atendente">Olá, como posso ajudar?</p>
         </div>
       </div>
       <div>
-        <h4 class="fala-atendente">Atendente diz:</h4>
-        <div class="box-fala-atendente-2">
-          <p class="texto-atendente">Texto</p>
-        </div>
-      </div>
-      <div>
         <h4 class="fala-usuario">Você diz:</h4>
-        <div class="box-texto-usuario-1">
-          <p class="texto-usuario">Texto</p>
-        </div>
-      </div>
-      <div>
-        <h4 class="fala-usuario">Você diz:</h4>
-        <div class="box-texto-usuario-2">
+        <div class="box-texto-usuario">
           <p class="texto-usuario">Texto</p>
         </div>
       </div>
     </div>
-    <div class="box-envio">
-      <input placeholder="Digite sua mensagem..." />
-      <button>Enviar</button>
-    </div>
-  </body>
+  </div>
+  <div class="box-envio">
+    <input placeholder="Digite sua mensagem..." />
+    <button>Enviar</button>
+  </div>
+</body>
+
 </html>
 
 <style>
   body {
     background-color: #f5f5f5;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    width: 500px;
-    justify-items: center;
-    margin-top: 3vh;
-    font-size: large;
-    font-family: arial;
   }
 
-  .box-conversa {
-    padding: 30px;
-  }
-
-  .box-texto-usuario-1 {
-    width: 25vw;
-    margin: 50px auto;
-    border-radius: 15px;
-    background: #318a70;
-    color: #fff;
+  div.scroll {
+    background-color: green;
+    overflow-y: auto;
+    text-align: justify;
+    width: 95vw;
+    height: 70vh;
     padding: 20px;
-    text-align: center;
-    font-weight: 700;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .box-texto-usuario-1:after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 15px solid #318a70;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #318a70;
-    border-bottom: 15px solid transparent;
-    right: -16px;
-    top: 0px;
-  }
-
-  .box-texto-usuario-1 > p {
-    text-align: right;
-    margin: 3px;
-  }
-
-  .box-texto-usuario-2 {
-    width: 25vw;
-    margin: 50px auto;
-    border-radius: 15px;
-    background: #318a70;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-weight: 700;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .box-texto-usuario-2:after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 15px solid #318a70;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #318a70;
-    border-bottom: 15px solid transparent;
-    right: -16px;
-    top: 0px;
-  }
-
-  .box-texto-usuario-2 > p {
-    text-align: right;
-    margin: 3px;
-  }
-
-  .box-fala-atendente-1 {
-    width: 25vw;
-    margin: 50px auto;
-    border-radius: 15px;
-    background: #318a70;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-weight: 700;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .box-fala-atendente-1:after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 15px solid transparent;
-    border-right: 15px solid #318a70;
-    border-top: 15px solid #318a70;
-    border-bottom: 15px solid transparent;
-    left: -16px;
-    top: 0px;
-  }
-
-  .box-fala-atendente-1 > p {
-    text-align: left;
-    margin: 3px;
-  }
-
-  .box-fala-atendente-2 {
-    width: 25vw;
-    margin: 50px auto;
-    border-radius: 15px;
-    background: #318a70;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    font-weight: 700;
-    position: relative;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .box-fala-atendente-2:after {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 15px solid transparent;
-    border-right: 15px solid #318a70;
-    border-top: 15px solid #318a70;
-    border-bottom: 15px solid transparent;
-    left: -16px;
-    top: 0px;
-  }
-
-  .box-fala-atendente-2 > p {
-    text-align: left;
-    margin: 3px;
-  }
-
-  input {
-    width: 20vw;
-    height: 4vh;
-    border-radius: 5px;
-    border: 1px solid #e6e6e6;
-    padding: 5px;
-    margin: 0;
-    font-size: large;
-  }
-
-  button {
-    width: 5vw;
-    height: 5vh;
-    border-radius: 5px;
-    border: 1px solid #e6e6e6;
-    padding: 5px;
-    background-color: #e6e6e6;
-    margin: 0;
-    color: #318a70;
-    font-weight: bolder;
-    font-size: large;
-  }
-
-  button:hover {
-    background-color: #318a70;
-    color: #e6e6e6;
-  }
-
-  button:active {
-    background-color: #266b56;
-    color: #e6e6e6;
+    border-radius: 10px;
+    background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='21' height='21' patternTransform='scale(3) rotate(110)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(204,18.8%,26.1%,1)'/><path d='M3.25 10h13.5M10 3.25v13.5' transform='translate(0.5,0)' stroke-linejoin='round' stroke-linecap='round' stroke-width='8' stroke='hsla(199,15.7%,38.6%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
   }
 
   .box-envio {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 25vw;
-    gap: 15px;
-    margin-top: 6vh;
+    margin-top: 0.4em;
+    width: 100%;
+  }
+
+  h1 {
     text-align: center;
-    font-weight: 500;
+    color: #000000;
+  }
+
+  input {
+    width: 80vw;
+    height: 2em;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    margin-right: 1em;
+    padding: 0.5em;
+  }
+
+  button {
+    width: 15vw;
+    height: 3em;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #ffffff;
   }
 
   .fala-usuario {
     text-align: right;
-    font-size: large
+    color: #fff;
+  }
+
+  .texto-usuario {
+    text-align: right;
+    color: #00000;
+  }
+
+  .box-texto-usuario {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-bottom: 1em;
   }
 
   .fala-atendente {
     text-align: left;
-    font-size: large
+    color: #fff;
   }
 
-  @media screen and (max-width: 500px) {
-    .box-fala-atendente-1 {
-      width: 80vw;
-    }
-
-    .box-fala-atendente-2 {
-      width: 80vw;
-    }
-
-    .box-texto-usuario-1 {
-      width: 80vw;
-    }
-
-    .box-texto-usuario-2 {
-      width: 80vw;
-    }
-
-    .box-envio {
-      width: 80vw;
-    }
-
-    body {
-      width: 80vw;
-    }
-
-    input {
-      width: 60vw;
-    }
-
-    button {
-      width: 20vw;
-    }
+  .texto-atendente {
+    text-align: left;
+    color: #000000;
   }
 
-  @media screen and (max-width: 1300px) {
-    .box-fala-atendente-1 {
-      width: 80vw;
-    }
-
-    .box-fala-atendente-2 {
-      width: 80vw;
-    }
-
-    .box-texto-usuario-1 {
-      width: 80vw;
-    }
-
-    .box-texto-usuario-2 {
-      width: 80vw;
-    }
-
-    .box-envio {
-      width: 80vw;
-    }
-
-    body {
-      width: 80vw;
-    }
-
-    input {
-      width: 60vw;
-    }
-
-    button {
-      width: 20vw;
-    }
+  .box-fala-atendente {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 0.5em;
+    margin-bottom: 1em;
   }
 </style>
